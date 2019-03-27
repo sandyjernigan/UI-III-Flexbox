@@ -64,3 +64,145 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 876px;
+	margin: 25px auto;
+}
+
+/* Header and Nav */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	width: 68%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: darkgray;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+main {
+	margin: 25px 0;
+}
+
+/* Flex Columns */
+.twocol, .threecol {
+	display: flex;
+	margin: 25px 0;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#indexpage .contentHeader .twocol {
+	align-items: center;
+}
+
+article {
+	padding-right: 10px;
+}
+
+article:last-child {
+	padding-right: 0;
+}
+
+/* Headers Text */
+h1 {
+	font-size: 90px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+/* Content Header */
+.indexHeaderText {
+	margin: auto;
+	text-align: center;
+}
+
+#indexpage button {
+	background-color: snow;
+	border: 1px solid black;
+	padding: 5px 35px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+  }
+
+/* Content */
+
+.content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 25px 0;
+}
+
+.middle-img {
+	width: 100%;
+  }
+
+.contact p {
+	line-height: 20px;
+	padding-bottom: 15px;
+}
+
+footer {
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: 14px;
+}
+
+/* Services */
+.services .content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 15px 0;
+}
+
+.services article {
+	background-color: Gainsboro;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 45%;
+	padding: 15px;
+	border: 1px black solid;
+	margin: 15px 30px 15px 0;
+}
+
+.services article:nth-child(even) {
+	margin: 15px 0;
+}
+
+.services article button {
+	background-color: snow;
+	border: 1px solid black;
+	padding: 8px 35px;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 0;
+	border-radius: 5px;
+}
+
+.facts div:first-child {
+	padding-right: 30px;
+}
+
+ul {
+	list-style-type: square;
+	padding: 10px 30px;
+	line-height: 30px;
+}
